@@ -6,8 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-# **** not working yet
-database_url = "postgresql://ecommerce_ngfw_user:bNeNiBoXdKugSPS1bxwbWyIzk4BhEFmR@dpg-db824k2j9qps73bbnomg-a.virginia-postgres.render.com/ecommerce_ngfw"
+database_url = "postgresql://ecommerce_hnev_user:rqpFLWoQP1Pc8keGNh6XdRbeMNAvyOpt@dpg-db824k2j9qps73bbnomg-a.virginia-postgres.render.com/ecommerce_ngfw"
 
 if database_url:
     app.config["SQLALCHEMY_DATABASE_URI"] = database_url
